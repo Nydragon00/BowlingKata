@@ -16,7 +16,7 @@ class Tests_range_pin_hit():
         return
 
     def test_points_per_turn(self):
-        assert  0 <= pin_count.count_points() <= 20 
+        assert isinstance(pin_count.count_round_points(), list) == True
         return
 
 #isinstance(pin_count.chance_pin_hit(), int) ==  True
